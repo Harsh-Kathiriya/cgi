@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+.glass-container {
+  background: rgba(113, 110, 152, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(91, 32, 187, 0.3);
+  box-shadow: 0 4px 15px rgba(80, 80, 80, 0.2);
+}
+.glass-container-red {
+  background: rgba(221, 123, 123, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(187, 32, 32, 0.3);
+  box-shadow: 0 4px 15px rgba(80, 80, 80, 0.2);
+}
+.glass-container-selected {
+  background: rgba(113, 110, 152, 0.3); /* Darker background */
+  backdrop-filter: blur(5px); /* Stronger blur */
+  border: 3px solid rgba(91, 32, 187, 0.7); /* Bolder, more opaque border */
+  box-shadow: 0 6px 20px rgba(80, 80, 80, 0.3); /* Stronger shadow */
+}
+
+.dashboard-container {
+  transition: transform 0.3s ease-in-out, opacity 0.3s ease-in-out;
+}
+
+.slide-up {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.slide-down {
+  transform: translateY(-100%);
+  opacity: 0;
+}
+
+.inventory-card, .cart-item {
+  background: rgba(113, 110, 152, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(91, 32, 187, 0.3);
+  box-shadow: 0 4px 15px rgba(80, 80, 80, 0.2);
+  transition: transform 0.3s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.inventory-card:hover, .cart-item:hover {
+  transform: scale(1.05);
+}
+
+.glass-button {
+  background: rgba(113, 110, 152, 0.1);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(91, 32, 187, 0.3);
+  box-shadow: 0 4px 15px rgba(80, 80, 80, 0.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+.glass-button:hover {
+  transform: scale(1.05);
+}
