@@ -20,7 +20,7 @@ export default function InventoryItem({ item, index, handleQuantityChange, handl
   const getBackgroundColorClass = (item) => {
     if (selectedCategory === "supply" && item.quantity < 10) {
       return "glass-container-red";
-    } else if (selectedCategory === "snacks" && item.quantityInStock < item.numberOfPeopleWant * 2) {
+    } else if (selectedCategory === "snacks" && ((item.quantityInStock < item.numberOfPeopleWant * 2)) || item.quantityInStock==0) {
       return "glass-container-red";
     } else if (selectedCategory === "other" && item.quantity < 10) {
       return "glass-container-red";
